@@ -93,5 +93,7 @@ If you want to know which `tap` repositories homebrew is currently using go:
 | azure-cli | `brew update && brew install azure-cli` |
 
 
+## Nuget
 
+All global nuget package installs are located at `~/.nuget/packages` on osx.
 

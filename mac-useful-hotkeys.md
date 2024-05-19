@@ -12,16 +12,14 @@ Please refer to the extensive list of all [keyboard shortcuts](https://support.a
 |`shift+cmd+5` |  desktop - take screenshot |
 |`shift+cmd+4` |  desktop - take more awesome screenshot |
 |`fn + F3`| mission control|
-
+|-|-|
 |`opt+cmd+d` | dock - show/hide dock |
-
-
+|-|-|
 | [FINDER]-> `shift+cmd+g` | finder - when opening finder, this opens Go-To-Folder dialog window in Finder to allow pasting file path |
 |`opt+ctrl+p|finder - see entire path at bottom of window|
 |`cmd+shift+.`|finder - see hidden files in finder|
 |`opt+cmd+del` | finder - delete file/folder permanently |
 |`cmd+shift+.` | finder - show hidden files |
-|`` |  |
 
 
 # Visual studio Mac hotkeys

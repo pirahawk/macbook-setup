@@ -56,6 +56,12 @@ Where are packages in the HomeBrew Cellar located?:
 	* There is also `/opt/homebrew/Caskroom` etc etc.
 
 
+Update homebrew
+```
+> brew update
+```
+
+
 If you want to know how brew went about installing a formula (I.e. package) the see below in the case of installing `jq`. This will tell you what was installed and what was symlinked etc.
 ```
 > brew info jq
@@ -83,6 +89,8 @@ If you want to know which `tap` repositories homebrew is currently using go:
 |-|-|
 | jq | `brew install jq` |
 | git | `brew install git` |
+| python | `brew install python@3.10` |
+| azure-cli | `brew update && brew install azure-cli` |
 
 
 

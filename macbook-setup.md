@@ -89,6 +89,7 @@ If you want to know which `tap` repositories homebrew is currently using go:
 |-|-|
 | jq | `brew install jq` |
 | git | `brew install git` |
+| git credential manager | `brew install --cask git-credential-manager` |
 | python | `brew install python@3.10` |
 | azure-cli | `brew update && brew install azure-cli` |
 | kubernetes-cli | `brew install kubernetes-cli` |

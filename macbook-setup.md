@@ -92,6 +92,14 @@ If you want to know which `tap` repositories homebrew is currently using go:
 | python | `brew install python@3.10` |
 | azure-cli | `brew update && brew install azure-cli` |
 
+### Other installs
+
+| Install-Name | Install-Instruction |
+|-|-|
+| Rosetta 2 | Install using `softwareupdate --install-rosetta`. Required for docker destop |
+| Docker Desktop | Installed using .dmg downloaded directly from site |
+| Visual Studio Code | Installed using .dmg downloaded directly from site |
+| Github Desktop | Installed using .dmg downloaded directly from site |
 
 ## Nuget
 

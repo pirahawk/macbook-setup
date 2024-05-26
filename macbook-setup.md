@@ -91,6 +91,8 @@ If you want to know which `tap` repositories homebrew is currently using go:
 | git | `brew install git` |
 | python | `brew install python@3.10` |
 | azure-cli | `brew update && brew install azure-cli` |
+| kubernetes-cli | `brew install kubernetes-cli` |
+| dapr-cli | `brew install dapr/tap/dapr-cli` |
 
 ### Other installs
 
@@ -104,4 +106,13 @@ If you want to know which `tap` repositories homebrew is currently using go:
 ## Nuget
 
 All global nuget package installs are located at `~/.nuget/packages` on osx.
+
+## Dapr
+
+Setup a local dapr install direct into docker destop using
+```bash
+> dapr install --dev
+```
+
+By default the dapr components are isntalled to `~/.dapr/components`
 

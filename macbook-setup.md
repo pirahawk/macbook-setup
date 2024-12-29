@@ -72,6 +72,12 @@ If you want to know which `tap` repositories homebrew is currently using go:
 >brew tap
 ```
 
+If you want to know which Python Binaries are in `/usr/bin/`
+```
+ls -l /usr/bin/python*
+```
+
+
 ## Installs
 
 
@@ -95,6 +101,7 @@ If you want to know which `tap` repositories homebrew is currently using go:
 | kubernetes-cli | `brew install kubernetes-cli` |
 | dapr-cli | `brew install dapr/tap/dapr-cli` |
 | helm | `brew install helm` |
+| powershell | `brew install powershell/tap/powershell` |
 
 ### Other installs
 

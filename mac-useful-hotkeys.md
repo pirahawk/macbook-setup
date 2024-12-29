@@ -103,3 +103,29 @@ sudo installer -pkg dotnet-sdk-3.1.101-osx-x64.pkg -target /
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 Killall Finder
 ```
+
+# Turn off .DS_Store
+Turn these off as they `can` be a security risk
+see: https://support.apple.com/en-gb/102064
+
+```
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+```
+
+# Turn off Macbook auto turn on (when lid is opened)
+To see the current settings
+```
+nvram -p
+```
+
+**BE CAREFUL YOU ARE MODDING THE FIRMWARE VARS HERE. YOU CAN BRICK THE MACHINE. I WOULD NOT RECOMMEND MONKEYING WITH THIS**
+To disable auto turn on:
+```
+sudo nvram AutoBoot=%00
+```
+
+To re-enable auto turn on:
+```
+sudo nvram AutoBoot=%00
+```
+

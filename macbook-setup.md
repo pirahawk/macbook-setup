@@ -11,7 +11,7 @@
 
 >Note: Typically you should aim to install to `usr/local/bin` & `usr/local/sbin` (if required) as these will not mess any of the other files up.
 
-Also look at the path `~/Library/`. Some interesting things stored at that location.
+Also look at the path `~/Library/`. Some interesting things stored at that location. (apparently these are OSX specific frameworks that are installed by Apple - I think?)
 
 
 ## Setups
@@ -21,7 +21,6 @@ Also look at the path `~/Library/`. Some interesting things stored at that locat
 * Since OSX uses the zsh shell by default, learn about .zsh profiles from [this article](https://www.freecodecamp.org/news/how-do-zsh-configuration-files-work/#:~:text=zprofile%20file%20(versus%20~%2F.,feel%20of%20the%20interactive%20terminal.)
 * The advice from the article states that on OSX you want to clearly write to the `~/.zprofile` as its best suited for interactive/non-interactive login shells.
 * the zsh shell is located by default in `/bin/zsh`. You can also run the bash shell from `/bin/bash/`
-*
 
 ### HomeBrew
 
@@ -76,6 +75,21 @@ If you want to know which Python Binaries are in `/usr/bin/`
 ```
 ls -l /usr/bin/python*
 ```
+### Python
+Python is a bit odd to manage. 
+
+Normally just use: `brew install python3` but for specific version: `brew install python@3.10`.
+
+However this installs to the following location:
+```
+~ % which python3
+/opt/homebrew/bin/python3
+```
+
+In order to just support the normal `python` cmd I had to add an alias to the `~/.zprofile`:
+```
+alias python='/opt/homebrew/bin/python3'
+```
 
 
 ## Installs
@@ -96,7 +110,7 @@ ls -l /usr/bin/python*
 | jq | `brew install jq` |
 | git | `brew install git` |
 | git credential manager | `brew install --cask git-credential-manager` |
-| python | `brew install python@3.10` |
+| python | Normally just use: `brew install python3` but for specific version: `brew install python@3.10` |
 | azure-cli | `brew update && brew install azure-cli` |
 | kubernetes-cli | `brew install kubernetes-cli` |
 | dapr-cli | `brew install dapr/tap/dapr-cli` |

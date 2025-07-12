@@ -60,6 +60,16 @@ Update homebrew
 > brew update
 ```
 
+To see which homebrew fomulae are outdated and need upgrading
+```
+> brew outdated
+```
+
+To see upgrade all homebrew fomulae
+```
+> brew upgrade
+```
+
 
 If you want to know how brew went about installing a formula (I.e. package) the see below in the case of installing `jq`. This will tell you what was installed and what was symlinked etc.
 ```

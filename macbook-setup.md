@@ -70,6 +70,12 @@ To see upgrade all homebrew fomulae
 > brew upgrade
 ```
 
+To cleanup older versions of an installed formulae
+```
+brew cleanup azure-cli // need to give the pkg name
+```
+
+
 
 If you want to know how brew went about installing a formula (I.e. package) the see below in the case of installing `jq`. This will tell you what was installed and what was symlinked etc.
 ```

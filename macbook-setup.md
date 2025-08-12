@@ -46,8 +46,11 @@ Remember to run the next steps:
 Where is the Homebrew installed? Can get this information via the following command:
 ```
 > brew --prefix
-```
 
+example:
+
+> brew --prefix openjdk
+```
 
 Where are packages in the HomeBrew Cellar located?: 
 * See this location on machine `/opt/homebrew/bin`
@@ -105,6 +108,28 @@ However this installs to the following location:
 In order to just support the normal `python` cmd I had to add an alias to the `~/.zprofile`:
 ```
 alias python='/opt/homebrew/bin/python3'
+```
+### Java
+
+First install the latest version of [openjdk](https://github.com/openjdk/jdk)
+```
+> brew install openjdk
+```
+
+Don't worry, according to internet it is the free version, still managed by Oracle and friends.
+
+Once brew completes
+then update your `~/.zprofile` with:
+```
+# for java, javac and ini
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include". #I do not need this line yet technically, would only come into play if I was doing cpp compilation and needed to work with java jni type stuff
+```
+
+Note you know where the homebrew JDK is installed by
+```
+> brew --prefix openjdk
 ```
 
 

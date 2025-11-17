@@ -153,6 +153,7 @@ Note you know where the homebrew JDK is installed by
 | git credential manager | `brew install --cask git-credential-manager` |
 | python | Normally just use: `brew install python3` but for specific version: `brew install python@3.10` |
 | azure-cli | `brew update && brew install azure-cli` |
+| azure-cli bicep | `az bicep upgrade` |
 | kubernetes-cli | `brew install kubernetes-cli` |
 | dapr-cli | `brew install dapr/tap/dapr-cli` |
 | helm | `brew install helm` |
@@ -167,9 +168,22 @@ Note you know where the homebrew JDK is installed by
 | Visual Studio Code | Installed using .dmg downloaded directly from site |
 | Github Desktop | Installed using .dmg downloaded directly from site |
 
+## dotnet
+
+After install dotnet run the following to update all your installed templates
+```
+> dotnet new update
+```
+
+
 ## Nuget
 
 All global nuget package installs are located at `~/.nuget/packages` on osx.
+
+To display the paths of all the local cache directories (http-cache directory, global-packages cache directory, temporary cache directory, and plugins cache directory)
+```
+> dotnet nuget locals all -l
+```
 
 ## Dapr
 
